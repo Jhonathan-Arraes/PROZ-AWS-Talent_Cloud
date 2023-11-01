@@ -1,0 +1,59 @@
+{
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": [
+        "def mostrarNumero():\n",
+        "  numeroCorreto = True\n",
+        "\n",
+        "  while numeroCorreto == True:\n",
+        "      try:\n",
+        "        numero = int(input(\"digite um numero entre 0 e 100 \"))\n",
+        "        if (numero <= 100):\n",
+        "          print(\"o número está está entre 0 e 100: \", numero)\n",
+        "          numeroCorreto == False\n",
+        "        else:\n",
+        "          print(\"o Numero deve ser entre 0 e 100 apenas \")\n",
+        "      except:\n",
+        "        print(\"Entrada Inválida, forneça somente números \")\n",
+        "\n",
+        "mostrarNumero()"
+      ],
+      "metadata": {
+        "id": "Vy1i1r_uDs7-",
+        "outputId": "d0db8df2-ed76-49cd-bd9b-faf384dfd390",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um numero entre 0 e 100 50\n",
+            "o número está está entre 0 e 100:  50\n",
+            "digite um numero entre 0 e 100 200\n",
+            "o Numero deve ser entre 0 e 100 apenas \n",
+            "digite um numero entre 0 e 100 50\n",
+            "o número está está entre 0 e 100:  50\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Olá, este é o Colaboratory",
+      "toc_visible": true,
+      "provenance": []
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
